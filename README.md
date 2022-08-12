@@ -27,9 +27,12 @@ There are some special programs may be need to run on the network.\
 
 ## Accounts
 
-Solana accounts are used to store data quite similar to the concept of storing a file in a filesystem. In Filesystem files are indexed by filename where the accounts are indexed by a hash of the public key which is a 32-byte or 256-bit string.  Accounts also include metadata, which holds access control information and other account information. Lifetime of a file is also including in metadata represented by a set of fractional native tokens known as lamports. The lamports field keeps track of each account's balance. Any account with no lamports will be wiped out after a certain period.
+Solana accounts are used to store data quite similar to the concept of storing a file in a filesystem. In Filesystem files are indexed by filename where the accounts are indexed by a hash of the public key which is a 32-byte or 256-bit string.  Accounts also include metadata, which holds access control information and other account information. Lifetime of a file is also including in metadata represented by a set of fractional native tokens known as lamports. 
+
+The lamports field keeps track of each account's balance. Any account with no lamports will be wiped out after a certain period.
 Balance represents a certain amount of cryptocurrency or tokens held by an account. 
-Account Storage
+
+## Account Storage
 A Solana ledger record that either carries data or is an executable program. A Solana account, like any other, may include money known as lamports. The way this data is kept and handled on the Solana differs from other blockchains such as Ethereum.
 
 ### Types of Account:
