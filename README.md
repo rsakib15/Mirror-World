@@ -41,10 +41,15 @@ If an account has at least two years' worth of rent, it is called rent-free whic
 
 ### How to create an account
 A client produces a keypair and registers its public key to create an account by using the SystemProgram::CreateAccount instruction. The maximum data size for an account is currently 10 megabytes. If extra space is needed, a program can replicate the data from one account to another with greater space. An address is 256-bit value. First 128-bit store the private key and next 128-bit used to store public key. 
+
 An owner must be assigned to an account when an account created. Only the account's owner has the ability to the modify the data in the account. If the program doesn’t associate with any accounts, then the application is provided an account with no data and zero lamports held by the system program. 
+
 Newly formed accounts reflect whether they sign the transaction and can therefore be utilized as an authority. The transfer instructions would be signed by the user with their private key, and the System Program would handle the deduction of tokens from the sender and crediting the receiver account. Private key is used to sign any transaction and anyone can verify the ownership of the transaction using the public key and message signature. So, we can easily verify the ownership using message signature and public key associate with it.
+
 At the time of initialization, Program is owned by the built-in program called System program and also called a system account aptly. An account has "owner" metadata. A program id serves as the owner. If the program's id matches the owner's, the runtime provides it write access to the account. 
+
 The System program's runtime allows clients to transfer lamports and, more crucially, assign account ownership, which means changing the owner to a new program id. The program can only read its data and credit the account if a program does not own an account. The amount of an account that has not been assigned to the program cannot be reduced.
+
 As program code and data are kept in different accounts, any program can read data from another account. Any application can add lamports to an account, but only the account owner can remove them. This is important when developing applications that may need to connect with accounts that they do not possess.
 
 ## Conclusion:
