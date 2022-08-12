@@ -6,7 +6,7 @@ Solana is a Layer-1 solution to the awful scalability problem that several block
 A client app can send a request with JSON-RPC to the Solana Node known as transactions. Each transaction can have one to many instructions. For each transaction, instructions are performed sequentially and atomically. Solana's account model is far more complex than Ethereum's because of it's storage and data accessing mechanism. If any instruction is invalid, the transaction's account modifications are discarded.
 
 An instruction contains three key parts: 
-1) The program which id the public key of the program should be executed.
+1) The program id which is a public key of the program and it should be executed.
 2) A subset of the transaction's accounts to be sent to the program which will be affected.
 3) A data byte array – used to instruct the program on which functions to invoke and with what arguments.
 
