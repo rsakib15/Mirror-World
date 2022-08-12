@@ -10,18 +10,22 @@ An instruction contains three key parts:
 2) A subset of the transaction's accounts to be sent to the program which will be affected.
 3) A data byte array – used to instruct the program on which functions to invoke and with what arguments.
 
-Transactions contain one or more digital signatures, each of which corresponds to an account address specified in the transaction. The program might return with a success code or an error code. When there is an error return, the entire transaction fails instantly.
+Transactions can contain one or more digital signatures, each of which corresponds to an account address specified in the transaction. The program might return with a success code or an error code. When there is an error return, the entire transaction fails instantly.
 
-Solana's system architecture is divided into validators and clusters.  A cluster is a group of validators that make up a Solana blockchain instance. The Solana community typically recognizes three clusters: Testnet, Devnet, and Mainnet Beta. For testing and development, Testnet and Devnet are utilized. The Mainnet Beta is the first-time tokens are acknowledged as having monetary worth. A transaction submitted to the incorrect cluster will be ignored.  Validators are the foundation of Solana's network. By engaging in consensus and completing transactions. Clients send transactions to a validator to validate.  Validator validate the transaction by using some consensus mechanism.Validation needs powerful computers or servers to approve all the transactions in the blockchain. 
+Solana's system architecture is divided into clusters and validators. A cluster is a group of validators that make up a Solana blockchain instance. The Solana community typically recognizes three clusters: Testnet, Devnet, and Mainnet Beta. For testing and development, Testnet and Devnet are utilized. The Mainnet Beta is the first-time tokens are acknowledged as having monetary worth. A transaction submitted to the incorrect cluster will be ignored.  Validators are the foundation of Solana's network. By engaging in consensus and completing transactions. Clients send transactions to a validator to network and Validator validate the transaction by using some consensus mechanism. Validation needs powerful computers or servers to approve all the transactions in the blockchain. 
 
-Solana, one of the market's most groundbreaking blockchains, has employed the Proof of History concept to speed up transactions on their network and overcome the scalability problem that many cryptocurrencies face today.To validate the transaction Solana blockchain use proof-of-history mechanism. Proof of History (PoH) is a permissionless, network-wide source of time that functions before consensus. PoH is not a consensus process, but rather a cryptographic approach for tracking time in a blockchain network by establishing timestamps. PoH is secured because instead than depending on the transaction's timestamp, it may demonstrate that the transaction occurred before and after an event. PoH starts a cryptographic hash function at a random staring position to end and take it as an input again and again. The system function counts the number of times the function is executed and then select any string from the results of each previous call. 
+Solana, one of the market's most groundbreaking blockchains, has employed the Proof of History concept to speed up transactions on their network and overcome the scalability problem that many cryptocurrencies face today.To validate the transaction Solana blockchain use proof-of-history mechanism. Proof of History (PoH) is a permissionless, network-wide source of time that functions before consensus. PoH is not a consensus process, but rather a cryptographic approach for tracking time in a blockchain network by establishing timestamps. PoH is secured because instead of depending on the transaction's timestamp, it may demonstrate that the transaction occurred before and after an event. PoH starts a cryptographic hash function at a random staring position to the end and take it as an input again and again. The system function counts the number of times the function is executed and then select any random string from the results of each previous call. 
 
 Solana's PoH consensus mechanism contributes to increased efficiency and throughput rate inside the Solana network. By having historical records of events or transactions, it allows the system to more easily track transactions and keep track of the ordering of the events.
+
 The runtime for the Solana network that allows for the concurrent execution of instructions and transactions. Despite differences in implementation and design, it is comparable to the Ethereum VM (EVM)
+
 There are some special programs may be need to run on the network.
 •	System Program: The system program is in process of setting new accounts and assigning account ownership.
 •	BPF Loader: The BPF Loader program is in responsible of Solana software deployment, updates, and instruction execution
 •	Token Programs: Implements a fungible or non-fungible token other than native SOL token
+
+
 
 ## Accounts
 
