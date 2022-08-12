@@ -33,7 +33,7 @@ The lamports field keeps track of each account's balance. Any account with no la
 Balance represents a certain amount of cryptocurrency or tokens held by an account. 
 
 ## Account Storage
-A Solana ledger record that either carries data or is an executable program. A Solana account, like any other, may include money known as lamports. The way this data is kept and handled on the Solana differs from other blockchains such as Ethereum.
+A Solana ledger is a record which either carries data or an executable program. A Solana account like any other may include money known as lamports. The way this data is kept and handled on the Solana differs from other blockchains such as Ethereum.
 
 ### Types of Account:
 There are two types of account on the Solana blockchain: 
