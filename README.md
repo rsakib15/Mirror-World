@@ -1,9 +1,9 @@
 ## Solana Programming Model
-Solana is a Layer-1 solution to the awful scalability problem that several blockchains are experiencing. The major purpose of Solana Programming is to take client’s input and change on-chain information as needed. Solana program is written on C/C++/Rust programming language. But it doesn’t mean that your application must be written on C/C++/Rust, you can use any language to write your application, so it is language-independent.  Solana node accepts HTTP requests using JSON-RPC specification and return the response to the client. JSON-RPC works as a middle-layer between the client and the Solana Node.
+Solana is a Layer-1 solution to the awful scalability problem that several blockchains are experiencing. The major purpose of Solana Programming is to take client’s input and change on-chain information as needed. Solana program is written on C/C++/Rust programming language. But it doesn’t mean that your application must be written on C/C++/Rust, you can use any language to write your front-facing application, so it is language-independent.  Solana node accepts HTTP requests using JSON-RPC specification and return the response to the client. JSON-RPC is a format that use as the data storage format. It also  works as a middle-layer between the client and the Solana Node.
 
 ![Solana Programming Model](sol-pro-model.png)
 
-The app can request to the Solana Node is known as transactions. Each transaction can have one to many instructions. For each transaction, instructions are performed sequentially and atomically. If any instruction is invalid, the transaction's account modifications are discarded. Solana's account model is far more complicated than Ethereum's.
+The app can send a request to the Solana Node known as transactions. Each transaction can have one to many instructions. For each transaction, instructions are performed sequentially and atomically. If any instruction is invalid, the transaction's account modifications are discarded. Solana's account model is far more complicated than Ethereum's.
 
 An instruction contains three key parts: 
 1) The program which id the public key of the program should be executed.
