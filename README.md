@@ -3,7 +3,7 @@ Solana is a Layer-1 solution to the awful scalability problem that several block
 
 ![Solana Programming Model](sol-pro-model.png)
 
-The app can send a request to the Solana Node known as transactions. Each transaction can have one to many instructions. For each transaction, instructions are performed sequentially and atomically. Solana's account model is far more complex than Ethereum's because of it's storage and data accessing mechanism. If any instruction is invalid, the transaction's account modifications are discarded.
+A client app can send a request to the Solana Node known as transactions. Each transaction can have one to many instructions. For each transaction, instructions are performed sequentially and atomically. Solana's account model is far more complex than Ethereum's because of it's storage and data accessing mechanism. If any instruction is invalid, the transaction's account modifications are discarded.
 
 An instruction contains three key parts: 
 1) The program which id the public key of the program should be executed.
