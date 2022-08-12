@@ -35,7 +35,7 @@ Balance represents a certain amount of cryptocurrency or tokens held by an accou
 ## Account Storage
 A Solana ledger is a record which either carries data or an executable program. A Solana account like any other may include money known as lamports. The way this data is kept and handled on the Solana differs from other blockchains such as Ethereum.
 
-### Types of Account:
+### Types of Account
 There are two types of account on the Solana blockchain: 
 1)	Executable: It store an executable program and immutable. As executable accounts cannot be changed and can only contain executable byte code, their application state must be preserved in non-executable accounts.
 2)	Non-executable: It hold the data associated with programs and keeps track of token balances and enables token transfers between them. Non-executable accounts are assigned an owner program address to govern who can edit this data. Other programs can view another account's data, but if they attempt to update it, the transaction fails.
