@@ -21,6 +21,7 @@ Solana's PoH consensus mechanism contributes to increased efficiency and through
 The runtime for the Solana network that allows for the concurrent execution of instructions and transactions. Despite differences in implementation and design, it is comparable to the Ethereum VM (EVM)
 
 There are some special programs may be need to run on the network.
+
 •	System Program: The system program is in process of setting new accounts and assigning account ownership.
 •	BPF Loader: The BPF Loader program is in responsible of Solana software deployment, updates, and instruction execution
 •	Token Programs: Implements a fungible or non-fungible token other than native SOL token
